@@ -14,6 +14,7 @@
 		B467AB641FD96E340002D1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B467AB621FD96E340002D1FD /* LaunchScreen.storyboard */; };
 		B467AB6F1FD96E350002D1FD /* FacetheperformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467AB6E1FD96E350002D1FD /* FacetheperformanceTests.swift */; };
 		B467AB7A1FD96E350002D1FD /* FacetheperformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467AB791FD96E350002D1FD /* FacetheperformanceUITests.swift */; };
+		B467AB881FD973960002D1FD /* Webclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467AB871FD973960002D1FD /* Webclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B467AB751FD96E350002D1FD /* FacetheperformanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacetheperformanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B467AB791FD96E350002D1FD /* FacetheperformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacetheperformanceUITests.swift; sourceTree = "<group>"; };
 		B467AB7B1FD96E350002D1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B467AB871FD973960002D1FD /* Webclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B467AB591FD96E340002D1FD /* AppDelegate.swift */,
 				B467AB5B1FD96E340002D1FD /* ViewController.swift */,
 				B467AB5D1FD96E340002D1FD /* Main.storyboard */,
+				B467AB871FD973960002D1FD /* Webclass.swift */,
 				B467AB601FD96E340002D1FD /* Assets.xcassets */,
 				B467AB621FD96E340002D1FD /* LaunchScreen.storyboard */,
 				B467AB651FD96E350002D1FD /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				B467AB5C1FD96E340002D1FD /* ViewController.swift in Sources */,
 				B467AB5A1FD96E340002D1FD /* AppDelegate.swift in Sources */,
+				B467AB881FD973960002D1FD /* Webclass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
