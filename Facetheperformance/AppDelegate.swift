@@ -54,17 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let isDisplayStatusLocked = UserDefaults.standard
         if let lock = isDisplayStatusLocked.value(forKey: "isDisplayStatusLocked"){
             // user locked screen
-            if(lock as! Bool){
-                
-                // do anything you want here
-                let exitStr = "Lock Button Pressed!"
-                let exitStatus = UserDefaults.standard
-                exitStatus.set(exitStr, forKey: "exitStatus")
-                exitStatus.synchronize()
-                print(exitStr)
-                
-            }
-            else{
+            if( ( lock as! Bool )  || !( lock as! Bool )){
                 
                 // do anything you want here
                 let exitStr = "Home Button Pressed!"
@@ -72,13 +62,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 exitStatus.set(exitStr, forKey: "exitStatus")
                 exitStatus.synchronize()
                 print(exitStr)
-                
-                // let todoEndpoint: String = "https://gr2lqfx86d.execute-api.eu-central-1.amazonaws.com/prod/lock"
-                // guard let url = URL(string: todoEndpoint) else {
-                //    print("Error: cannot create URL")
-                //    return
-                // }
-                // _ = URLRequest(url: url)
                 WebClass().lockAction()
                 print("Lock API call sent")
             }
