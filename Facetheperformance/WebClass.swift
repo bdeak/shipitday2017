@@ -7,8 +7,10 @@
 //
 
 import Foundation
+
 class WebClass {
-    func lockAction(){
+    
+    @objc func lockAction(){
         let url = URL(string: "https://gr2lqfx86d.execute-api.eu-central-1.amazonaws.com/prod/lock")!
         var request = URLRequest(url: url)
         //request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
@@ -40,7 +42,7 @@ class WebClass {
     }
 
     
-    func unlockAction(){
+    @objc func unlockAction(){
         let url = URL(string: "https://gr2lqfx86d.execute-api.eu-central-1.amazonaws.com/prod/unlock")!
         var request = URLRequest(url: url)
         //request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")

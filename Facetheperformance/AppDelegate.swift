@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let web = WebClass()
+    //let web = WebClass()
    
     
     let displayStatusChanged: CFNotificationCallback = { center, observer, name, object, info in
@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 _ = URLRequest(url: url)
                 print("Lock API call sent")
-                web.lockAction()
+                WebClass().lockAction()
             }
         }
         
@@ -89,7 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(_ application: UIApplication) {
         print("Back to foreground.")
-        web.unlockAction()
+        WebClass().unlockAction()
         
         //restore lock screen setting
         
