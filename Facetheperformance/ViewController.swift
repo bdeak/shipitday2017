@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var statusLabel = UILabel()
     var labelStr = "Hello World!"
+    @IBOutlet var button: UIButton!
     
     override func viewDidLoad() {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "Porsche")
+        backgroundImage.contentMode =  UIViewContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateStatusLabel), name: NSNotification.Name(rawValue: "updateExitStatus"), object: nil)
@@ -31,10 +35,7 @@ class ViewController: UIViewController {
         if let str = exitStatus.string(forKey: "exitStatus"){
             labelStr = str
         }
-        statusLabel.text = labelStr
-        statusLabel.sizeToFit()
-        statusLabel.center = self.view.center
-        self.view.addSubview(statusLabel)
+        button.setTitle(labelStr, for: [])
     }
    
         
