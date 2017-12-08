@@ -73,15 +73,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 exitStatus.synchronize()
                 print(exitStr)
                 
-                let todoEndpoint: String = "https://gr2lqfx86d.execute-api.eu-central-1.amazonaws.com/prod/lock"
-                guard let url = URL(string: todoEndpoint) else {
-                    print("Error: cannot create URL")
-                    return
-                }
-                _ = URLRequest(url: url)
-                print("Lock API call sent")
+                // let todoEndpoint: String = "https://gr2lqfx86d.execute-api.eu-central-1.amazonaws.com/prod/lock"
+                // guard let url = URL(string: todoEndpoint) else {
+                //    print("Error: cannot create URL")
+                //    return
+                // }
+                // _ = URLRequest(url: url)
                 WebClass().lockAction()
+                print("Lock API call sent")
             }
+            
         }
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateExitStatus"), object: nil)
