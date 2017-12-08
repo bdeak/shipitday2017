@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     @IBAction func showAlert(_ sender: AnyObject) {
         // Initialize Alert View
         
-        let alertView = UIAlertView(title: "Alert", message: "Do you wish to unlock your car?", delegate: self, cancelButtonTitle: "Yes", otherButtonTitles: "No")
+        let alertView = UIAlertView(title: "Alert", message: "Do you wish to lock or unlock your car?", delegate: self, cancelButtonTitle: "unlock", otherButtonTitles: "lock")
         
         // Configure Alert View
         alertView.tag = 1
